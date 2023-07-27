@@ -9,7 +9,7 @@
 }
 .content-section-heading h3,
 .content-section-heading .h3 {
-  font-size: 1rem;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
@@ -305,4 +305,52 @@ footer.footer .social-link:hover {
   justify-content: center;
   align-items: center;
   background-color: #00b7da;
+}
+
+.contact_title {
+  font-size: 2rem;
+}
+
+/* animation */
+
+.wrapper {
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.wrapper > .dynamic_text {
+  margin-left: 15px;
+}
+
+.dynamic_text > li {
+  list-style: none;
+  color: #40a4c6;
+  font-size: 50px;
+  position: relative;
+}
+
+.dynamic_text > li::after {
+  content: "";
+  background-color: #212529;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid #212529;
+  animation: typing steps(17);
+  animation-duration: 6s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  40%,
+  60% {
+    left: 0;
+  }
+  100% {
+    left: 460px;
+  }
 }
