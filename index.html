@@ -10,7 +10,7 @@
     <meta name="author" content="Vladimir Khachatryan" />
     <title>Vladimir Khachatryan - Portfolio</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./logo.png" />
     <!-- Font Awesome icons -->
     <script
       src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
@@ -41,7 +41,13 @@
     <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
     <nav id="sidebar-wrapper">
       <ul class="sidebar-nav">
-        <li class="sidebar-brand"><a href="#page-top">Start Bootstrap</a></li>
+        <li class="sidebar-nav-item">
+          <a href="#page-top">
+            <img src="./logo.png" class="img-fluid" width="50" alt="Logo" />
+            <br />
+            Vladimir Khachatryan
+          </a>
+        </li>
         <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
         <li class="sidebar-nav-item"><a href="#about">About</a></li>
         <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
@@ -51,7 +57,7 @@
     <!-- Header-->
     <header class="masthead d-flex align-items-center">
       <div class="container px-4 px-lg-5 text-center">
-        <h1 id="title" class="mb-1">Vladimir Khachatryan</h1>
+        <h1 id="vk" class="mb-1">Vladimir Khachatryan</h1>
         <h3 class="mb-5"><em></em></h3>
         <a class="btn btn-primary btn-xl" href="#about"> Learn More About Me</a>
       </div>
@@ -63,7 +69,7 @@
           <div class="col-lg-10">
             <div class="d-flex justify-content-center">
               <ul class="dynamic_text">
-                <li><span>Front End Developer</span></li>
+                <li><span class="title">Front End Developer</span></li>
               </ul>
             </div>
             <a class="btn btn-primary btn-xl" href="#services">What I Know</a>
@@ -78,11 +84,13 @@
     >
       <div class="container px-4 px-lg-5">
         <div class="content-section-heading">
-          <h3 class="text-white mb-0"></h3>
-          <h2 class="mb-5">What Languages I Know</h2>
+          <h2 class="mb-5 title">
+            What Languages <br id="services_br" />
+            I Know
+          </h2>
         </div>
         <div class="row gx-4 gx-lg-5">
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <div class="col-md-3 col-6 mb-5 mb-lg-0">
             <span class="service-icon rounded-circle mx-auto mb-3">
               <img
                 src="./img/icons/html.png"
@@ -92,7 +100,7 @@
             </span>
             <h4><strong>HTML</strong></h4>
           </div>
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <div class="col-md-3 col-6 mb-5 mb-lg-0">
             <span class="service-icon rounded-circle mx-auto mb-3"
               ><img
                 src="./img/icons/css-3.png"
@@ -101,7 +109,7 @@
             /></span>
             <h4><strong>CSS</strong></h4>
           </div>
-          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+          <div class="col-md-3 col-6 mb-5 mb-md-0">
             <span class="service-icon rounded-circle mx-auto mb-3"
               ><img
                 src="./img/icons/java-script.png"
@@ -111,7 +119,7 @@
             </span>
             <h4><strong>JavaScript</strong></h4>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-md-3 col-6">
             <span class="service-icon rounded-circle mx-auto mb-3"
               ><img
                 src="./img/icons/bootstrap.png"
@@ -126,7 +134,7 @@
     <!-- Callout-->
     <section class="callout">
       <div class="container px-4 px-lg-5 text-center">
-        <h2 class="mx-auto mb-5">
+        <h2 class="mx-auto mb-5 title">
           You can also
           <em>see</em>
           My projects
@@ -138,11 +146,11 @@
     <section class="content-section" id="portfolio">
       <div class="container px-4 px-lg-5">
         <div class="content-section-heading text-center">
-          <h3 class="text-white mb-3">Portfolio</h3>
-          <h2 class="mb-5">My Projects</h2>
+          <h2 class="text-white mb-3 title">Portfolio</h2>
+          <h4 class="mb-5">My Projects</h4>
         </div>
         <div class="row gx-0">
-          <div class="col-lg-6">
+          <div class="col-lg-6 mb-2">
             <a
               class="portfolio-item"
               href="https://bmw-xi.vercel.app/"
@@ -159,7 +167,7 @@
               <img class="img-fluid" src="./img/projects/bmw.png" alt="BMW" />
             </a>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 mb-2">
             <a
               class="portfolio-item"
               href="https://nft-beta.vercel.app/"
@@ -180,7 +188,7 @@
               />
             </a>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 mb-2">
             <a class="portfolio-item" href="#!">
               <div class="caption">
                 <div class="caption-content">
@@ -194,7 +202,7 @@
               <img class="img-fluid" src="./img/portfolio-3.jpg" alt="..." />
             </a>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 mb-2">
             <a class="portfolio-item" href="#!">
               <div class="caption">
                 <div class="caption-content">
@@ -212,66 +220,71 @@
       </div>
     </section>
     <!-- Start Contact Us-->
-    <h4 class="text-center text-white mb-3 contact_title">Contact Us</h4>
+
     <section id="contactForm">
-      <div class="container">
-        <div class="col text-center text-white mt-4 mb-4">
-          <h3>Lets Keep in Touch</h3>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-12 mb-3">
-            <form data-bs-theme="dark">
-              <div class="mb-3">
-                <label class="form-label text-white" for="name">Name</label>
-                <input
-                  class="form-control"
-                  id="name"
-                  type="text"
-                  placeholder="Name"
-                  required
-                />
-              </div>
-
-              <div class="mb-3">
-                <label class="form-label text-white" for="emailAddress"
-                  >Email Address</label
-                >
-                <input
-                  class="form-control"
-                  id="emailAddress"
-                  type="email"
-                  placeholder="Email Address"
-                  required
-                />
-              </div>
-
-              <div class="mb-3">
-                <label class="form-label text-white" for="message"
-                  >Message</label
-                >
-                <textarea
-                  class="form-control"
-                  id="message"
-                  type="text"
-                  placeholder="Message"
-                  style="height: 10rem"
-                  required
-                ></textarea>
-              </div>
-
-              <div class="d-grid">
-                <button class="btn btn-primary btn-lg" type="submit">
-                  Send
-                </button>
-              </div>
-            </form>
+      <h2 class="text-center text-white mb-3 contact_title title">
+        Contact Us
+      </h2>
+      <div class="contactForm_container">
+        <div class="container">
+          <div class="col text-center text-white mt-4 mb-4">
+            <h3>Lets Keep in Touch</h3>
           </div>
-          <div class="col-md-6 col-12 mb-3" id="contact_us_img">
-            <img
-              src="https://www.bluleadz.com/hubfs/Contact%20Us%20Graphic-241715-edited.png"
-              alt=""
-              class="img-fluid"
-            />
+          <div class="row">
+            <div class="col-md-6 col-12 mb-3">
+              <form data-bs-theme="dark">
+                <div class="mb-3">
+                  <label class="form-label text-white" for="name">Name</label>
+                  <input
+                    class="form-control"
+                    id="name"
+                    type="text"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label text-white" for="emailAddress"
+                    >Email Address</label
+                  >
+                  <input
+                    class="form-control"
+                    id="emailAddress"
+                    type="email"
+                    placeholder="Email Address"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label text-white" for="message"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    type="text"
+                    placeholder="Message"
+                    style="height: 10rem"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="d-grid">
+                  <button class="btn btn-primary btn-lg" type="submit">
+                    Send
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6 col-12 mb-3" id="contact_us_img">
+              <img
+                src="https://www.bluleadz.com/hubfs/Contact%20Us%20Graphic-241715-edited.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
           </div>
         </div>
       </div>
