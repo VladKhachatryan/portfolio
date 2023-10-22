@@ -81,3 +81,39 @@ function fadeIn(el, display) {
 
 let year = new Date();
 document.getElementById("date").innerHTML = year.getFullYear();
+
+(function () {
+  emailjs.init("ykUssv1RdfZcW1zf4");
+})();
+
+function sendMail() {
+  const nameInput = document.getElementById("name");
+  const emailInput = document.getElementById("email");
+  const messageInput = document.getElementById("message");
+
+ 
+  if (!nameInput.value || !emailInput.value || !messageInput.value) {
+    Swal.fire("Please fill in all required fields.", "", "error");
+    return;
+  }
+
+  var params = {
+    name: nameInput.value,
+    email: emailInput.value,
+    message: messageInput.value,
+  };
+
+  const serviceID = "service_6xav3jf";
+  const templateID = "template_udgt8td";
+
+  emailjs
+    .send(serviceID, templateID, params)
+    .then((res) => {
+      nameInput.value = "";
+      emailInput.value = "";
+      messageInput.value = "";
+      console.log(res);
+      Swal.fire("Your message sent successfully!", "", "success");
+    })
+    .catch((err) => console.log(err));
+}
