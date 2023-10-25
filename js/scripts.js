@@ -91,9 +91,8 @@ function sendMail() {
   const emailInput = document.getElementById("email");
   const messageInput = document.getElementById("message");
 
- 
   if (!nameInput.value || !emailInput.value || !messageInput.value) {
-    Swal.fire("Please fill in all required fields.", "", "error");
+    Swal.fire("", "", "error");
     return;
   }
 
@@ -113,7 +112,7 @@ function sendMail() {
       emailInput.value = "";
       messageInput.value = "";
       console.log(res);
-      Swal.fire("Your message sent successfully!", "", "success");
+      Swal.fire("", "", "success");
     })
     .catch((err) => console.log(err));
 }
